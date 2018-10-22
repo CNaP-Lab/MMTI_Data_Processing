@@ -14,8 +14,8 @@ echo $sub_num
 cd /mnt/hcp01/scR21_asl/cortical_par/$sub_num
 echo $PWD
 
-for i in {1..3}
-#for i in {1,3}
+#for i in {1..3}
+for i in 2
 do
  cd day_${i}/mri
  echo $PWD

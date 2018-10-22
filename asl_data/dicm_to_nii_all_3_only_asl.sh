@@ -45,6 +45,8 @@ cd /mnt/hcp01/scR21_asl/asl_results/$sub_num/
 
 echo "Current driectory : ${pwd}"
 for i in {1..3};do
+#for i in 1 3
+#do
         cd day_$i/
         # Remove unwanted folders 
         if [  $i -eq 1 ] || [ $i -eq 3 ]; then 
