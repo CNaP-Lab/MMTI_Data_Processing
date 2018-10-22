@@ -20,9 +20,9 @@ echo Enter Second date DICOM data directory
 read data2
 echo "2nd day data: ${data2}"
 
-echo Enter Third date DICOM data directory
-read data3
-echo "3rd day data: ${data3}"
+#echo Enter Third date DICOM data directory
+#read data3
+#echo "3rd day data: ${data3}"
 
 data_list="$data1 $data2 $data3"
 arr=($data_list)
@@ -33,6 +33,8 @@ cd /mnt/jxvs01/tools/matlab_path/dicm2nii
  
 echo "change directory to DICM2NII folder : {$PWD}"
 for i in {1..3};do
+#for i in 1 2
+#do
         echo /mnt/hcp01/scR21_asl/asl_results/$sub_num/day_$i
         echo ${arr[$((i-1))]}
 	/mnt/jxvs01/pipelines/HCP/usr/local/MATLAB/R2016b/bin/matlab -nodisplay -r "dicm2nii('/mnt/jxvs01/incoming/Smoking_Cessation_Abi_Dargham/${arr[$((i-1))]}', '/mnt/hcp01/scR21_asl/asl_results/$sub_num/day_$i', 0); quit"
@@ -45,6 +47,8 @@ cd /mnt/hcp01/scR21_asl/asl_results/$sub_num/
 
 echo "Current driectory : ${pwd}"
 for i in {1..3};do
+#for i in 1 2
+#do
         cd day_$i/
         # Remove unwanted folders 
         if [  $i -eq 1 ] || [ $i -eq 3 ]; then 
