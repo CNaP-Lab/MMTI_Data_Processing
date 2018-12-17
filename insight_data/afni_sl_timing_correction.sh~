@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Developed by Sameera K. Abeykoon (November 2018)
+
+# This will convert Metacog and Insight multiecho DICOM data to 
+# nifti and json files. One DICOM file will creat 3 nifts files
+# three json files for all three echos
+
+echo Enter the Subject number path
+read sub_path
+echo "Subject No path: ${sub_path}"
+
+# get the fMRI data folders to an array
+fmri_=($(find . -maxdepth 1 -type f -name "*.txt*"))
+
