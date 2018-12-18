@@ -59,4 +59,17 @@ for s_num in "${sub_num[@]}"; do
 done 
 
 # Run the Neuromelanin Toolbox
-sh nm_tbx.sh ${sub_num[@]}
+#sh nm_tbx.sh ${sub_num[@]}
+
+# change the directory to NM folders
+cd '/mnt/hcp01/nm_data/NM_toolbox'
+
+echo "NM Data processing "
+for s_num in "${sub_num[@]}";
+do
+        echo "NM data processing for ${s_num} "
+        cp par_cp.m par.m
+        replace "Subject_number" "${s_num}" -- par.m
+        # run the NM_toolbox
+        matlab -nodisplay -r "batch_run; quit"
+done
