@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# Developed by Sameera K. Abeykoon (MArch 19th 2018)
+# Developed by Sameera K. Abeykoon (December 2018)
+# To process Neuromelanin (NM) data from Insight project
 
 echo Enter the Subject numbers
 read -a sub_num
@@ -8,7 +9,7 @@ echo "Subject No: ${sub_num[@]}"
 
 for s_num in "${sub_num[@]}"; do
     
-    # make directory for asl data analysis
+    # make directory for nm data analysis
     mkdir /mnt/hcp01/nm_data/$s_num/
     
     echo Enter input DICOM data directory for ${s_num}
@@ -21,7 +22,7 @@ for s_num in "${sub_num[@]}"; do
  
     echo "change directory to DICM2NII folder : {$PWD}"
     
-    /mnt/jxvs01/pipelines/HCP/usr/local/MATLAB/R2016b/bin/matlab -nodisplay -r "dicm2nii('/mnt/jxvs01/incoming/INSIGHT_Moeller/${data1}', '/mnt/hcp01/nm_data/${s_num}', 0); quit"
+    matlab -nodisplay -r "dicm2nii('/mnt/jxvs01/incoming/INSIGHT_Moeller/${data1}', '/mnt/hcp01/nm_data/${s_num}', 0); quit"
 
     # change to nm directory
     cd  /mnt/hcp01/nm_data/$s_num/
@@ -35,7 +36,7 @@ for s_num in "${sub_num[@]}"; do
     rm *Metacog*
     rm *Insight*
 
-    # make Anat ASL and REF folders for the data analysis
+    # make Anat and NM folders for the data analysis
     mkdir Anat NM
     # copy the T1W_MPR_003.nii into cortical parcellation dir
     if [ -e T1w_MPR_s003.nii ]
@@ -59,4 +60,18 @@ for s_num in "${sub_num[@]}"; do
 done 
 
 # Run the Neuromelanin Toolbox
-sh nm_tbx.sh ${sub_num[@]}
+#sh nm_tbx.sh ${sub_num[@]}
+
+# change the directory to NM folders
+cd '/mnt/hcp01/nm_data/NM_toolbox'
+
+echo "NM Data processing "
+for s_num in "${sub_num[@]}";
+do
+        echo "NM data processing for ${s_num} "
+        cp par_cp.m par.m
+        replace "Subject_number" "${s_num}" -- par.m
+
+        # run the NM_toolbox
+        matlab -nodisplay -r "batch_run; quit"
+done
