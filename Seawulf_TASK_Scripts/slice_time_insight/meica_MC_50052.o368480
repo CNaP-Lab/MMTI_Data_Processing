@@ -1,0 +1,5385 @@
+Oblique data detected.
+
+++++++++++++++++++++++++
++* Set up script run environment
+
+++++++++++++++++++++++++
++* Copy in functional datasets, reset NIFTI tags as needed
+
+++++++++++++++++++++++++
++* Calculate and save motion and obliquity parameters, despiking first if not disabled, and separately save and mask the base volume
+
+++++++++++++++++++++++++
++* Preliminary preprocessing of functional datasets: despike, tshift, deoblique, and/or axialize
+--------Preliminary preprocessing dataset After_sl_50052_fMRI_Metacog_PA_2_20.nii of TE=6.4ms to produce e1_ts+orig
+--------Preliminary preprocessing dataset After_sl_50052_fMRI_Metacog_PA_2_20_e2.nii of TE=16.86ms to produce e2_ts+orig
+--------Preliminary preprocessing dataset After_sl_50052_fMRI_Metacog_PA_2_20_e3.nii of TE=27.32ms to produce e3_ts+orig
+
+++++++++++++++++++++++++
++* Prepare T2* and S0 volumes for use in functional masking and (optionally) anatomical-functional coregistration (takes a little while).
+-- T2* Map Component for ME-ICA v2.0 --
+++ Loading Data
+++ Computing Mask
+++ Computing T2* map
+++ Computing optimal combination
+Out shape is  (65, 66, 42, 6)
+ + Writing file: ocv.nii ....done.
+ + Writing file: s0v.nii ....done.
+ + Writing file: t2sv.nii ....done.
+ + Writing file: t2svm.nii ....done.
+
+++++++++++++++++++++++++
++* Extended preprocessing of functional datasets
+--------Preparing functional masking for this ME-EPI run
+--------Trim empty space off of mask dataset and/or resample
+--------Apply combined normalization/co-registration/motion correction parameter set to e1_ts+orig
+--------Apply combined normalization/co-registration/motion correction parameter set to e2_ts+orig
+--------Apply combined normalization/co-registration/motion correction parameter set to e3_ts+orig
+
+++++++++++++++++++++++++
++* Perform TE-dependence analysis (takes a good while)
+-- ME-PCA/ME-ICA Component for ME-ICA v2.5 beta10--
+++ Loading Data
+++ Computing Mask
+++ Computing T2* map
+ + Writing file: s0v.nii ....done.
+ + Writing file: t2sv.nii ....done.
+ + Writing file: t2sF.nii ....done.
+++ Doing ME-PCA and ME-ICA with MDP
+-Computing PCA of optimally combined multi-echo data
+Out shape is  (36, 44, 34, 188)
+0
+24.2211372542 121105.686271
+Out shape is  (36, 44, 34, 188)
+Saving PCA
+[ True  True  True  True  True  True  True  True  True  True  True  True
+  True  True  True  True  True  True  True  True  True  True  True  True
+  True  True  True  True  True  True  True  True  True  True  True  True
+  True  True  True  True  True  True  True  True  True  True  True  True
+  True  True  True  True  True  True  True  True  True  True  True  True
+  True  True  True  True  True  True  True  True  True  True  True  True
+  True  True  True  True  True  True  True  True  True  True  True  True
+  True  True  True  True  True  True False False False  True False False
+ False False False False False False False False False  True False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False]
+--Selected 92 components. Minimum Kappa=18.69 Rho=27.19
+Step no. 1, convergence: 1.0000000
+Step no. 2, convergence: 0.3810461
+Step no. 3, convergence: 0.4331880
+Step no. 4, convergence: 0.4693198
+Step no. 5, convergence: 0.5966551
+Step no. 6, convergence: 0.6925953
+Step no. 7, convergence: 0.3039830
+Step no. 8, convergence: 0.3252941
+Step no. 9, convergence: 0.3577236
+Step no. 10, convergence: 0.3690156
+Step no. 11, convergence: 0.3983716
+Step no. 12, convergence: 0.4314338
+Step no. 13, convergence: 0.4810825
+Step no. 14, convergence: 0.5474349
+Step no. 15, convergence: 0.6355056
+Step no. 16, convergence: 0.7757848
+Step no. 17, convergence: 0.9897280
+Step no. 18, convergence: 0.6608964
+Step no. 19, convergence: 0.2345428
+Step no. 20, convergence: 0.0338936
+Step no. 21, convergence: 0.0058268
+Step no. 22, convergence: 0.0029658
+Step no. 23, convergence: 0.0028958
+Step no. 24, convergence: 0.0026336
+Step no. 25, convergence: 0.0022588
+Step no. 26, convergence: 0.0018291
+Step no. 27, convergence: 0.0015278
+Step no. 28, convergence: 0.0014020
+Step no. 29, convergence: 0.0012728
+Step no. 30, convergence: 0.0011403
+Step no. 31, convergence: 0.0010189
+Step no. 32, convergence: 0.0009653
+Step no. 33, convergence: 0.0009846
+Step no. 34, convergence: 0.0010219
+Step no. 35, convergence: 0.0010776
+Step no. 36, convergence: 0.0011496
+Step no. 37, convergence: 0.0012314
+Step no. 38, convergence: 0.0013112
+Step no. 39, convergence: 0.0013723
+Step no. 40, convergence: 0.0013965
+Step no. 41, convergence: 0.0013691
+Step no. 42, convergence: 0.0012845
+Step no. 43, convergence: 0.0011471
+Step no. 44, convergence: 0.0009698
+Step no. 45, convergence: 0.0007814
+Step no. 46, convergence: 0.0007579
+Step no. 47, convergence: 0.0007349
+Step no. 48, convergence: 0.0007122
+Step no. 49, convergence: 0.0006895
+Step no. 50, convergence: 0.0006658
+Step no. 51, convergence: 0.0006411
+Step no. 52, convergence: 0.0006156
+Step no. 53, convergence: 0.0005902
+Step no. 54, convergence: 0.0005655
+Step no. 55, convergence: 0.0005419
+Step no. 56, convergence: 0.0005188
+Step no. 57, convergence: 0.0004953
+Step no. 58, convergence: 0.0004706
+Step no. 59, convergence: 0.0004523
+Step no. 60, convergence: 0.0005201
+Step no. 61, convergence: 0.0005957
+Step no. 62, convergence: 0.0006753
+Step no. 63, convergence: 0.0007517
+Step no. 64, convergence: 0.0008159
+Step no. 65, convergence: 0.0008572
+Step no. 66, convergence: 0.0008670
+Step no. 67, convergence: 0.0008413
+Step no. 68, convergence: 0.0007830
+Step no. 69, convergence: 0.0007012
+Step no. 70, convergence: 0.0006072
+Step no. 71, convergence: 0.0005118
+Step no. 72, convergence: 0.0004224
+Step no. 73, convergence: 0.0003434
+Step no. 74, convergence: 0.0002764
+Step no. 75, convergence: 0.0002214
+Step no. 76, convergence: 0.0001925
+Step no. 77, convergence: 0.0001981
+Step no. 78, convergence: 0.0002046
+Step no. 79, convergence: 0.0002119
+Step no. 80, convergence: 0.0002193
+Step no. 81, convergence: 0.0002266
+Step no. 82, convergence: 0.0002331
+Step no. 83, convergence: 0.0002383
+Step no. 84, convergence: 0.0002416
+Step no. 85, convergence: 0.0002427
+Step no. 86, convergence: 0.0002411
+Step no. 87, convergence: 0.0002366
+Step no. 88, convergence: 0.0002292
+Step no. 89, convergence: 0.0002192
+Step no. 90, convergence: 0.0002070
+Step no. 91, convergence: 0.0001979
+Step no. 92, convergence: 0.0001942
+Step no. 93, convergence: 0.0001877
+Step no. 94, convergence: 0.0001785
+Step no. 95, convergence: 0.0001670
+Step no. 96, convergence: 0.0001538
+Step no. 97, convergence: 0.0001393
+Step no. 98, convergence: 0.0001244
+Step no. 99, convergence: 0.0001096
+Step no. 100, convergence: 0.0000967
+Step no. 101, convergence: 0.0000963
+Step no. 102, convergence: 0.0000958
+Step no. 103, convergence: 0.0000950
+Step no. 104, convergence: 0.0000941
+Step no. 105, convergence: 0.0000930
+Step no. 106, convergence: 0.0000919
+Step no. 107, convergence: 0.0000906
+Step no. 108, convergence: 0.0000893
+Step no. 109, convergence: 0.0000880
+Step no. 110, convergence: 0.0000867
+Step no. 111, convergence: 0.0000853
+Step no. 112, convergence: 0.0000860
+Step no. 113, convergence: 0.0000902
+Step no. 114, convergence: 0.0000946
+Step no. 115, convergence: 0.0000993
+Step no. 116, convergence: 0.0001043
+Step no. 117, convergence: 0.0001096
+Step no. 118, convergence: 0.0001152
+Step no. 119, convergence: 0.0001209
+Step no. 120, convergence: 0.0001267
+Step no. 121, convergence: 0.0001324
+Step no. 122, convergence: 0.0001380
+Step no. 123, convergence: 0.0001432
+Step no. 124, convergence: 0.0001479
+Step no. 125, convergence: 0.0001519
+Step no. 126, convergence: 0.0001549
+Step no. 127, convergence: 0.0001569
+Step no. 128, convergence: 0.0001577
+Step no. 129, convergence: 0.0001572
+Step no. 130, convergence: 0.0001554
+Step no. 131, convergence: 0.0001524
+Step no. 132, convergence: 0.0001480
+Step no. 133, convergence: 0.0001425
+Step no. 134, convergence: 0.0001358
+Step no. 135, convergence: 0.0001282
+Step no. 136, convergence: 0.0001199
+Step no. 137, convergence: 0.0001110
+Step no. 138, convergence: 0.0001077
+Step no. 139, convergence: 0.0001037
+Step no. 140, convergence: 0.0000990
+Step no. 141, convergence: 0.0000937
+Step no. 142, convergence: 0.0000879
+Step no. 143, convergence: 0.0000819
+Step no. 144, convergence: 0.0000758
+Step no. 145, convergence: 0.0000724
+Step no. 146, convergence: 0.0000695
+Step no. 147, convergence: 0.0000663
+Step no. 148, convergence: 0.0000631
+Step no. 149, convergence: 0.0000598
+Step no. 150, convergence: 0.0000564
+Step no. 151, convergence: 0.0000531
+Step no. 152, convergence: 0.0000498
+Step no. 153, convergence: 0.0000467
+Step no. 154, convergence: 0.0000477
+Step no. 155, convergence: 0.0000491
+Step no. 156, convergence: 0.0000504
+Step no. 157, convergence: 0.0000515
+Step no. 158, convergence: 0.0000525
+Step no. 159, convergence: 0.0000532
+Step no. 160, convergence: 0.0000538
+Step no. 161, convergence: 0.0000541
+Step no. 162, convergence: 0.0000543
+Step no. 163, convergence: 0.0000541
+Step no. 164, convergence: 0.0000538
+Step no. 165, convergence: 0.0000532
+Step no. 166, convergence: 0.0000524
+Step no. 167, convergence: 0.0000515
+Step no. 168, convergence: 0.0000503
+Step no. 169, convergence: 0.0000490
+Step no. 170, convergence: 0.0000475
+Step no. 171, convergence: 0.0000459
+Step no. 172, convergence: 0.0000442
+Step no. 173, convergence: 0.0000424
+Step no. 174, convergence: 0.0000405
+Step no. 175, convergence: 0.0000386
+Step no. 176, convergence: 0.0000366
+Step no. 177, convergence: 0.0000355
+Step no. 178, convergence: 0.0000357
+Step no. 179, convergence: 0.0000358
+Step no. 180, convergence: 0.0000360
+Step no. 181, convergence: 0.00Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+00362
+Step no. 182, convergence: 0.0000363
+Step no. 183, convergence: 0.0000365
+Step no. 184, convergence: 0.0000367
+Step no. 185, convergence: 0.0000369
+Step no. 186, convergence: 0.0000371
+Step no. 187, convergence: 0.0000373
+Step no. 188, convergence: 0.0000376
+Step no. 189, convergence: 0.0000378
+Step no. 190, convergence: 0.0000380
+Step no. 191, convergence: 0.0000383
+Step no. 192, convergence: 0.0000385
+Step no. 193, convergence: 0.0000388
+Step no. 194, convergence: 0.0000391
+Step no. 195, convergence: 0.0000393
+Step no. 196, convergence: 0.0000396
+Step no. 197, convergence: 0.0000398
+Step no. 198, convergence: 0.0000401
+Step no. 199, convergence: 0.0000403
+Step no. 200, convergence: 0.0000405
+Step no. 201, convergence: 0.0000407
+Step no. 202, convergence: 0.0000409
+Step no. 203, convergence: 0.0000411
+Step no. 204, convergence: 0.0000412
+Step no. 205, convergence: 0.0000413
+Step no. 206, convergence: 0.0000413
+Step no. 207, convergence: 0.0000413
+Step no. 208, convergence: 0.0000413
+Step no. 209, convergence: 0.0000412
+Step no. 210, convergence: 0.0000411
+Step no. 211, convergence: 0.0000409
+Step no. 212, convergence: 0.0000407
+Step no. 213, convergence: 0.0000404
+Step no. 214, convergence: 0.0000400
+Step no. 215, convergence: 0.0000396
+Step no. 216, convergence: 0.0000391
+Step no. 217, convergence: 0.0000385
+Step no. 218, convergence: 0.0000379
+Step no. 219, convergence: 0.0000372
+Step no. 220, convergence: 0.0000365
+Step no. 221, convergence: 0.0000357
+Step no. 222, convergence: 0.0000348
+Step no. 223, convergence: 0.0000339
+Step no. 224, convergence: 0.0000330
+Step no. 225, convergence: 0.0000321
+Step no. 226, convergence: 0.0000312
+Step no. 227, convergence: 0.0000302
+Step no. 228, convergence: 0.0000293
+Step no. 229, convergence: 0.0000321
+Step no. 230, convergence: 0.0000374
+Step no. 231, convergence: 0.0000436
+Step no. 232, convergence: 0.0000509
+Step no. 233, convergence: 0.0000593
+Step no. 234, convergence: 0.0000691
+Step no. 235, convergence: 0.0000805
+Step no. 236, convergence: 0.0000935
+Step no. 237, convergence: 0.0001082
+Step no. 238, convergence: 0.0001248
+Step no. 239, convergence: 0.0001433
+Step no. 240, convergence: 0.0001634
+Step no. 241, convergence: 0.0001850
+Step no. 242, convergence: 0.0002076
+Step no. 243, convergence: 0.0002305
+Step no. 244, convergence: 0.0002529
+Step no. 245, convergence: 0.0002735
+Step no. 246, convergence: 0.0002912
+Step no. 247, convergence: 0.0003048
+Step no. 248, convergence: 0.0003132
+Step no. 249, convergence: 0.0003158
+Step no. 250, convergence: 0.0003123
+Step no. 251, convergence: 0.0003025
+Step no. 252, convergence: 0.0002866
+Step no. 253, convergence: 0.0002652
+Step no. 254, convergence: 0.0002392
+Step no. 255, convergence: 0.0002102
+Step no. 256, convergence: 0.0001799
+Step no. 257, convergence: 0.0001503
+Step no. 258, convergence: 0.0001229
+Step no. 259, convergence: 0.0000988
+Step no. 260, convergence: 0.0000783
+Step no. 261, convergence: 0.0000614
+Step no. 262, convergence: 0.0000479
+Step no. 263, convergence: 0.0000373
+Step no. 264, convergence: 0.0000289
+Step no. 265, convergence: 0.0000263
+Step no. 266, convergence: 0.0000250
+Secondary convergence, fine-tuning...
+Step no. 267, convergence: 0.0000238
+Convergence after 267 steps
+
+Convergence criterium:  1.44963229631e-06
+Out shape is  (36, 44, 34, 188)
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+.cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gProgram 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+z ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.8 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+++ Writing optimally combined time series
+Out shape is  (36, 44, 34, 188)
+ + Writing file: ts_OC.nii ....done.
+++ Writing Kappa-filtered optimally combined timeseries
+Variance explained:  99.5515261885 %
+ + Writing file: hik_ts_OC.nii ....done.
+ + Writing file: lowk_ts_OC.nii ....done.
+ + Writing file: dn_ts_OC.nii ....done.
+++ Writing signal versions of components
+ + Writing file: betas_OC.nii ....done.
+ + Writing file: betas_hik_OC.nii ....done.
+++ Writing optimally combined high-Kappa features
+ + Writing file: feats_OC2.nii ....done.
+++ Writing component table
+
+++++++++++++++++++++++++
++* Copying results to start directory
+
+-- Multi-Echo Independent Components Analysis (ME-ICA) v2.5 beta11 --
+
+Please cite: 
+Kundu, P., Brenowitz, N.D., Voon, V., Worbe, Y., Vertes, P.E., Inati, S.J., Saad, Z.S., 
+Bandettini, P.A. & Bullmore, E.T. Integrated strategy for improving functional 
+connectivity mapping using multiecho fMRI. PNAS (2013).
+
+Kundu, P., Inati, S.J., Evans, J.W., Luh, W.M. & Bandettini, P.A. Differentiating 
+BOLD and non-BOLD signals in fMRI time series using multi-echo EPI. NeuroImage (2011).
+
+++ Checking system for dependencies...
+ + Python version: 2.7.13
+ + Numpy version: 1.11.3
+ + Scipy version: 0.19.0
+ + Using AFNI 3dSeg for gray matter weighted anatomical-functional coregistration
+ + Dependencies OK.
+++ Continuing with preprocessing.
+++ Writing script file: _meica_After_sl_50052_fMRI_Metacog_PA_2_20.sh
+++ Executing script file: _meica_After_sl_50052_fMRI_Metacog_PA_2_20.sh
+Oblique data detected.
+
+++++++++++++++++++++++++
++* Set up script run environment
+
+++++++++++++++++++++++++
++* Copy in functional datasets, reset NIFTI tags as needed
+
+++++++++++++++++++++++++
++* Calculate and save motion and obliquity parameters, despiking first if not disabled, and separately save and mask the base volume
+
+++++++++++++++++++++++++
++* Preliminary preprocessing of functional datasets: despike, tshift, deoblique, and/or axialize
+--------Preliminary preprocessing dataset After_sl_50052_fMRI_Metacog_AP_1_19.nii of TE=6.4ms to produce e1_ts+orig
+--------Preliminary preprocessing dataset After_sl_50052_fMRI_Metacog_AP_1_19_e2.nii of TE=16.86ms to produce e2_ts+orig
+--------Preliminary preprocessing dataset After_sl_50052_fMRI_Metacog_AP_1_19_e3.nii of TE=27.32ms to produce e3_ts+orig
+
+++++++++++++++++++++++++
++* Prepare T2* and S0 volumes for use in functional masking and (optionally) anatomical-functional coregistration (takes a little while).
+-- T2* Map Component for ME-ICA v2.0 --
+++ Loading Data
+++ Computing Mask
+++ Computing T2* map
+++ Computing optimal combination
+Out shape is  (65, 66, 42, 6)
+ + Writing file: ocv.nii ....done.
+ + Writing file: s0v.nii ....done.
+ + Writing file: t2sv.nii ....done.
+ + Writing file: t2svm.nii ....done.
+
+++++++++++++++++++++++++
++* Extended preprocessing of functional datasets
+--------Preparing functional masking for this ME-EPI run
+--------Trim empty space off of mask dataset and/or resample
+--------Apply combined normalization/co-registration/motion correction parameter set to e1_ts+orig
+--------Apply combined normalization/co-registration/motion correction parameter set to e2_ts+orig
+--------Apply combined normalization/co-registration/motion correction parameter set to e3_ts+orig
+
+++++++++++++++++++++++++
++* Perform TE-dependence analysis (takes a good while)
+-- ME-PCA/ME-ICA Component for ME-ICA v2.5 beta10--
+++ Loading Data
+++ Computing Mask
+++ Computing T2* map
+ + Writing file: s0v.nii ....done.
+ + Writing file: t2sv.nii ....done.
+ + Writing file: t2sF.nii ....done.
+++ Doing ME-PCA and ME-ICA with MDP
+-Computing PCA of optimally combined multi-echo data
+Out shape is  (36, 44, 36, 204)
+0
+24.7405603918 123702.801959
+Out shape is  (36, 44, 36, 204)
+Saving PCA
+[ True  True  True  True  True  True  True  True  True  True  True  True
+  True  True  True  True  True  True  True  True  True  True  True  True
+  True  True  True  True  True  True  True  True  True  True  True  True
+  True  True  True  True  True  True  True  True  True  True  True  True
+  True  True  True  True  True  True  True  True  True  True  True  True
+  True  True  True  True  True  True  True  True  True  True  True  True
+  True  True  True  True  True  True  True  True  True  True  True  True
+  True  True  True  True  True  True  True  True  True  True  True  True
+  True  True  True  True  True  True  True  True  True  True  True  True
+  True  True  True  True  True  True  True  True  True  True  True  True
+  True  True  True  True  True  True  True  True  True  True  True  True
+  True  True  True  True  True  True  True  True  True False  True False
+  True  True  True  True False  True  True  True  True  True False False
+  True False  True False False  True False False False False  True False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False False False False False False False]
+--Selected 155 components. Minimum Kappa=22.38 Rho=30.26
+Step no. 1, convergence: 1.0000000
+Step no. 2, convergence: 0.2784349
+Step no. 3, convergence: 0.2935029
+Step no. 4, convergence: 0.3646899
+Step no. 5, convergence: 0.4053569
+Step no. 6, convergence: 0.3216176
+Step no. 7, convergence: 0.2898611
+Step no. 8, convergence: 0.2148915
+Step no. 9, convergence: 0.2069924
+Step no. 10, convergence: 0.1958217
+Step no. 11, convergence: 0.1681515
+Step no. 12, convergence: 0.1581448
+Step no. 13, convergence: 0.2073475
+Step no. 14, convergence: 0.2408310
+Step no. 15, convergence: 0.2740779
+Step no. 16, convergence: 0.2656088
+Step no. 17, convergence: 0.2462530
+Step no. 18, convergence: 0.2550552
+Step no. 19, convergence: 0.3653533
+Step no. 20, convergence: 0.4968846
+Step no. 21, convergence: 0.7419966
+Step no. 22, convergence: 0.9070269
+Step no. 23, convergence: 0.3660739
+Step no. 24, convergence: 0.0985207
+Step no. 25, convergence: 0.0171901
+Step no. 26, convergence: 0.0078787
+Step no. 27, convergence: 0.0033889
+Step no. 28, convergence: 0.0032625
+Step no. 29, convergence: 0.0029234
+Step no. 30, convergence: 0.0024590
+Step no. 31, convergence: 0.0019873
+Step no. 32, convergence: 0.0015828
+Step no. 33, convergence: 0.0013900
+Step no. 34, convergence: 0.0014248
+Step no. 35, convergence: 0.0014225
+Step no. 36, convergence: 0.0013702
+Step no. 37, convergence: 0.0012755
+Step no. 38, convergence: 0.0011613
+Step no. 39, convergence: 0.0010503
+Step no. 40, convergence: 0.0010465
+Step no. 41, convergence: 0.0010929
+Step no. 42, convergence: 0.0011395
+Step no. 43, convergence: 0.0011822
+Step no. 44, convergence: 0.0012180
+Step no. 45, convergence: 0.0012440
+Step no. 46, convergence: 0.0012549
+Step no. 47, convergence: 0.0012446
+Step no. 48, convergence: 0.0012079
+Step no. 49, convergence: 0.0011425
+Step no. 50, convergence: 0.0010498
+Step no. 51, convergence: 0.0009362
+Step no. 52, convergence: 0.0008129
+Step no. 53, convergence: 0.0006917
+Step no. 54, convergence: 0.0005804
+Step no. 55, convergence: 0.0004824
+Step no. 56, convergence: 0.0003985
+Step no. 57, convergence: 0.0004151
+Step no. 58, convergence: 0.0004333
+Step no. 59, convergence: 0.0004484
+Step no. 60, convergence: 0.0004598
+Step no. 61, convergence: 0.0004665
+Step no. 62, convergence: 0.0004677
+Step no. 63, convergence: 0.0004630
+Step no. 64, convergence: 0.0004522
+Step no. 65, convergence: 0.0004358
+Step no. 66, convergence: 0.0004149
+Step no. 67, convergence: 0.0003907
+Step no. 68, convergence: 0.0003647
+Step no. 69, convergence: 0.0003380
+Step no. 70, convergence: 0.0003116
+Step no. 71, convergence: 0.0002865
+Step no. 72, convergence: 0.0002638
+Step no. 73, convergence: 0.0002845
+Step no. 74, convergence: 0.0003284
+Step no. 75, convergence: 0.0003823
+Step no. 76, convergence: 0.0004467
+Step no. 77, convergence: 0.0005205
+Step no. 78, convergence: 0.0006011
+Step no. 79, convergence: 0.0006834
+Step no. 80, convergence: 0.0007598
+Step no. 81, convergence: 0.0008213
+Step no. 82, convergence: 0.0008594
+Step no. 83, convergence: 0.0008687
+Step no. 84, convergence: 0.0008478
+Step no. 85, convergence: 0.0007991
+Step no. 86, convergence: 0.0007281
+Step no. 87, convergence: 0.0006424
+Step no. 88, convergence: 0.0005504
+Step no. 89, convergence: 0.0004602
+Step no. 90, convergence: 0.0003782
+Step no. 91, convergence: 0.0003076
+Step no. 92, convergence: 0.0002494
+Step no. 93, convergence: 0.0002089
+Step no. 94, convergence: 0.0001905
+Step no. 95, convergence: 0.0001826
+Step no. 96, convergence: 0.0001751
+Step no. 97, convergence: 0.0001673
+Step no. 98, convergence: 0.0001592
+Step no. 99, convergence: 0.0001652
+Step no. 100, convergence: 0.0001710
+Step no. 101, convergence: 0.0001765
+Step no. 102, convergence: 0.0001816
+Step no. 103, convergence: 0.0001862
+Step no. 104, convergence: 0.0001902
+Step no. 105, convergence: 0.0001935
+Step no. 106, convergence: 0.0001957
+Step no. 107, convergence: 0.0001967
+Step no. 108, convergence: 0.0001962
+Step no. 109, convergence: 0.0001940
+Step no. 110, convergence: 0.0001900
+Step no. 111, convergence: 0.0001842
+Step no. 112, convergence: 0.0001768
+Step no. 113, convergence: 0.0001680
+Step no. 114, convergence: 0.0001582
+Step no. 115, convergence: 0.0001558
+Step no. 116, convergence: 0.0001619
+Step no. 117, convergence: 0.0001679
+Step no. 118, convergence: 0.0001739
+Step no. 119, convergence: 0.0001798
+Step no. 120, convergence: 0.0001854
+Step no. 121, convergence: 0.0001906
+Step no. 122, convergence: 0.0001953
+Step no. 123, convergence: 0.0001994
+Step no. 124, convergence: 0.0002027
+Step no. 125, convergence: 0.0002166
+Step no. 126, convergence: 0.0002391
+Step no. 127, convergence: 0.0002632
+Step no. 128, convergence: 0.0002884
+Step no. 129, convergence: 0.0003143
+Step no. 130, convergence: 0.0003399
+Step no. 131, convergence: 0.0003643
+Step no. 132, convergence: 0.0003866
+Step no. 133, convergence: 0.0004056
+Step no. 134, convergence: 0.0004203
+Step no. 135, convergence: 0.0004301
+Step no. 136, convergence: 0.0004340
+Step no. 137, convergence: 0.0004316
+Step no. 138, convergence: 0.0004226
+Step no. 139, convergence: 0.0004070
+Step no. 140, convergence: 0.0003852
+Step no. 141, convergence: 0.0003582
+Step no. 142, convergence: 0.0003273
+Step no. 143, convergence: 0.0002942
+Step no. 144, convergence: 0.0002606
+Step no. 145, convergence: 0.0002279
+Step no. 146, convergence: 0.0001974
+Step no. 147, convergence: 0.0001698
+Step no. 148, convergence: 0.0001455
+Step no. 149, convergence: 0.0001245
+Step no. 150, convergence: 0.0001153
+Step no. 151, convergence: 0.0001211
+Step no. 152, convergence: 0.0001269
+Step no. 153, convergence: 0.0001325
+Step no. 154, convergence: 0.0001378
+Step no. 155, convergence: 0.0001428
+Step no. 156, convergence: 0.0001473
+Step no. 157, convergence: 0.0001512
+Step no. 158, convergence: 0.0001542
+Step no. 159, convergence: 0.0001564
+Step no. 160, convergence: 0.0001575
+Step no. 161, convergence: 0.0001575
+Step no. 162, convergence: 0.0001563
+Step no. 163, convergence: 0.0001538
+Step no. 164, convergence: 0.0001500
+Step no. 165, convergence: 0.0001451
+Step no. 166, convergence: 0.0001390
+Step no. 167, convergence: 0.0001320
+Step no. 168, convergence: 0.0001241
+Step no. 169, convergence: 0.0001157
+Step no. 170, convergence: 0.0001069
+Step no. 171, convergence: 0.0000979
+Step no. 172, convergence: 0.0000890
+Step no. 173, convergence: 0.0000808
+Step no. 174, convergence: 0.0000785
+Step no. 175, convergence: 0.0000759
+Step no. 176, convergence: 0.0000730
+Step no. 177, convergence: 0.0000700
+Step no. 178, convergence: 0.0000667
+Step noProgram 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+. 179, convergence: 0.0000633
+Step no. 180, convergence: 0.0000598
+Step no. 181, convergence: 0.0000562
+Step no. 182, convergence: 0.0000527
+Step no. 183, convergence: 0.0000493
+Step no. 184, convergence: 0.0000459
+Step no. 185, convergence: 0.0000427
+Step no. 186, convergence: 0.0000397
+Step no. 187, convergence: 0.0000368
+Step no. 188, convergence: 0.0000342
+Step no. 189, convergence: 0.0000318
+Step no. 190, convergence: 0.0000295
+Step no. 191, convergence: 0.0000275
+Step no. 192, convergence: 0.0000267
+Step no. 193, convergence: 0.0000262
+Step no. 194, convergence: 0.0000258
+Step no. 195, convergence: 0.0000253
+Secondary convergence, fine-tuning...
+Step no. 196, convergence: 0.0000248
+Convergence after 196 steps
+
+Convergence criterium:  9.56181636758e-07
+Out shape is  (36, 44, 36, 204)
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+.cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gProgram 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+*** NO CLUSTERS FOUND ***
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+z ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.4 MB)
+..
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.9 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+Program 3dmerge 
+3dmerge: edit and combine 3D datasets, by RW Cox
+++ editing input dataset in memory (0.2 MB)
+.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: .cc_temp.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+ + Writing file: __clin.nii.gz ....done.
+++ Writing optimally combined time series
+Out shape is  (36, 44, 36, 204)
+ + Writing file: ts_OC.nii ....done.
+++ Writing Kappa-filtered optimally combined timeseries
+Variance explained:  99.8468977383 %
+ + Writing file: hik_ts_OC.nii ....done.
+ + Writing file: midk_ts_OC.nii ....done.
+ + Writing file: lowk_ts_OC.nii ....done.
+ + Writing file: dn_ts_OC.nii ....done.
+++ Writing signal versions of components
+ + Writing file: betas_OC.nii ....done.
+ + Writing file: betas_hik_OC.nii ....done.
+++ Writing optimally combined high-Kappa features
+ + Writing file: feats_OC2.nii ....done.
+++ Writing component table
+
+++++++++++++++++++++++++
++* Copying results to start directory
+
+-- Multi-Echo Independent Components Analysis (ME-ICA) v2.5 beta11 --
+
+Please cite: 
+Kundu, P., Brenowitz, N.D., Voon, V., Worbe, Y., Vertes, P.E., Inati, S.J., Saad, Z.S., 
+Bandettini, P.A. & Bullmore, E.T. Integrated strategy for improving functional 
+connectivity mapping using multiecho fMRI. PNAS (2013).
+
+Kundu, P., Inati, S.J., Evans, J.W., Luh, W.M. & Bandettini, P.A. Differentiating 
+BOLD and non-BOLD signals in fMRI time series using multi-echo EPI. NeuroImage (2011).
+
+++ Checking system for dependencies...
+ + Python version: 2.7.13
+ + Numpy version: 1.11.3
+ + Scipy version: 0.19.0
+ + Using AFNI 3dSeg for gray matter weighted anatomical-functional coregistration
+ + Dependencies OK.
+++ Continuing with preprocessing.
+++ Writing script file: _meica_After_sl_50052_fMRI_Metacog_AP_1_19.sh
+++ Executing script file: _meica_After_sl_50052_fMRI_Metacog_AP_1_19.sh
