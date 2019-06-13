@@ -12,7 +12,11 @@ for s_num in "${sub_num[@]}"; do
     # make directory for nm data analysis
     mkdir /mnt/hcp01/nm_data/$s_num/
     
-    echo Enter input DICOM data directory for ${s_num}
+    #echo Enter input DICOM data directory for ${s_num}
+    #read data1
+    #echo "input day data: ${data1}"
+
+    echo Enter input DICOM data directory path ${s_num}
     read data1
     echo "input day data: ${data1}"
     
@@ -22,7 +26,7 @@ for s_num in "${sub_num[@]}"; do
  
     echo "change directory to DICM2NII folder : {$PWD}"
     
-    matlab -nodisplay -r "dicm2nii('/mnt/jxvs01/incoming/INSIGHT_Moeller/${data1}', '/mnt/hcp01/nm_data/${s_num}', 0); quit"
+    matlab -nodisplay -r "dicm2nii('${data1}', '/mnt/hcp01/nm_data/${s_num}', 0); quit"
 
     # change to nm directory
     cd  /mnt/hcp01/nm_data/$s_num/
@@ -35,6 +39,16 @@ for s_num in "${sub_num[@]}"; do
     rm *field_map*
     rm *Metacog*
     rm *Insight*
+    rm *PET*
+    rm *_T2w_SPC_* 
+    rm mpr*
+    rm *striatum*
+    rm Head_PD_ax*
+    rm localizer*
+    rm rr* x_rr*
+    rm *SBRef*
+    rm audctx* gre_vte* *.json
+    rm x_* AdjGre* MP2RAGE*
 
     # make Anat and NM folders for the data analysis
     mkdir Anat NM NM_norm
@@ -53,8 +67,9 @@ for s_num in "${sub_num[@]}"; do
 
     # move the NM data files to those folders
     NM_file=$(ls hx_gre_*.nii | sort -n | head -1)
+    #if [ -f "$NM_file" ]; then
     mv ${NM_file} NM/
-    
+    # NM_file=$(ls hx_gre_*.nii | sort -n | head -1)
     # move the NM data files to those folders
     NM_norm_file=$(ls hx_gre_*.nii)
     mv ${NM_norm_file} NM_norm/
