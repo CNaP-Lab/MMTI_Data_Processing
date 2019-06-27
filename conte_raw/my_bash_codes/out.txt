@@ -1,0 +1,21 @@
+Comparing following two files
+ 
+abc.txt
+ 
+avd.txt
+ 
+Following files are different
+Comparing following two files
+ 
+abc.txt
+ 
+avd.txt
+ 
+Following files are different
+Comparing following two files
+ 
+abc.txt
+ 
+avd.txt
+ 
+Following files are different

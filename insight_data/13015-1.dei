@@ -1,0 +1,126 @@
+# Experiment: 2015sjmUrica
+# SessionDate: 10-06-2016
+# SessionTime: 11:01:28
+# SessionStartDateTimeUtc: 10/6/2016 3:01:28 PM
+# topic1: Drugs
+# topic2: Food
+# instructions: You will see sentences describing\n  People, Food and Drugs. \n  \n  Some will mention you, others will \n  mention another person.\n  \n  Press whichever button shows how strongly you \n  agree or disagree with each statement.
+# MRItrigger: {=}
+# acquaintanceName: Beverly
+# subjectName: Tom
+# heShe: he
+# himHer: him
+# hisHer: his
+# key0: Cc8
+# key1: Vv7
+# key2: Bb1
+# key3: Nn2
+# key4: Mm3
+# keyInterrupt: qQxX
+# responseKeySet: Cc8,Vv7,Bb1,Nn2,Mm3,qQxX
+# fbk0: Strongly Disagree
+# fbk1: Disagree
+# fbk2: Undecided
+# fbk3: Agree
+# fbk4: Strongly Agree
+# msStim: 7000
+# msInstruct: 10000
+# msCategoryWarning: 5000
+# msFeedbackMinimum: 500
+# btn0: A
+# btn1: B
+# btn2: C
+# btn3: D
+# btn4: E
+# categories: drugSelf, drugOther, foodSelf, foodOther
+# cat0: (no category defined)
+# cat1: You and Drugs
+# cat2: Beverly and Drugs
+# cat3: You and Food
+# cat4: Beverly and Food
+# filePath: lists/
+# fileNames: listSentencesShuffled_01to04.txt,listSentencesShuffled_05to08.txt,listSentencesShuffled_09to12.txt,listSentencesShuffled_13to16.txt
+# site: TMII 3T Skyra
+# Subject: 13015
+# Session: 1
+# Sex: female
+# fileStimuli: run all
+# data source: -	('-' indicates streamed values- no intermediary file) 
+# 
+# Variable names are in the next line: -------------- 
+# onset  rawStim rawRT trial  SOA  RT  category  scoring resp scored prompt 
+10000 207810 NAN 6 10000 NAN foodSelf reverse NAN NAN "It might be worthwhile to work on my eating problem."
+17539 215349 220963 7 7539 5614 foodSelf reverse 2 4 "I've been thinking that I might want to change my eating."
+25078 222888 NAN 8 7539 NAN foodSelf direct NAN NAN "All this talk about psychology is boring. Why can't people like me just forget about their eating problems?"
+32633 230443 234802 9 7555 4359 foodSelf reverse 2 4 "I'm hoping that seeking help for my eating will help me to better understand myself."
+45175 242985 249874 10 12542 6889 foodOther reverse 1 5 "Beverly is hoping that seeking help regarding her eating will help her to understand herself better."
+52731 250541 254738 11 7556 4197 foodOther reverse 1 5 "Beverly has an eating problem, and she really thinks she should work at it."
+60286 258096 261802 12 7555 3706 foodOther direct 1 1 "Beverly isn't the problem one. It doesn't make much sense for her to seek help for eating."
+67858 265668 NAN 13 7572 NAN foodOther direct NAN NAN "Seeking help for eating is pretty much a waste of time for Beverly because the problem doesn't have to do with her."
+80401 278211 284193 14 12543 5982 drugSelf direct 1 1 "Regarding my drug use, I may be part of the problem, but I don't really think I am."
+87940 285750 288409 15 7539 2659 drugSelf direct 1 1 "All this talk about psychology is boring. Why can't people like me just forget about their drug use problems?"
+95495 293305 298224 16 7555 4919 drugSelf reverse 1 5 "I have a drug use problem and I really think I should work at it."
+103034 300844 306728 17 7539 5884 drugSelf reverse 1 5 "I wish I had more ideas on how to solve my drug use problem."
+115560 313370 NAN 18 12526 NAN drugOther direct NAN NAN "As far as I'm concerned, Beverly doesn't have any drug use problems that need changing."
+123098 320908 NAN 19 7538 NAN drugOther direct NAN NAN "Beverly isn't the problem one. It doesn't make much sense for her to seek help for drug use."
+130637 328447 334687 20 7539 6240 drugOther reverse 1 5 "Beverly has been thinking that she might want to change her drug use."
+138193 336003 NAN 21 7556 NAN drugOther direct NAN NAN "Beverly guesses she has faults related to drug use, but there's nothing that she really needs to change."
+# Waiting for MR sync... 
+10000 360787 365302 22 10000 4515 drugOther reverse 1 5 "Beverly wishes she had more ideas on how to solve her drug use problem."
+17539 368326 371934 23 7539 3608 drugOther reverse 1 5 "Maybe a drug treatment program will be able to help Beverly."
+25111 375898 NAN 24 7572 NAN drugOther direct NAN NAN "Beverly has worries about her drug use but so does the next guy. Why should she spend time thinking about her drug use?"
+32667 383454 387765 25 7556 4311 drugOther reverse 1 5 "Beverly thinks she might be ready for some self-improvement related to her drug use."
+45192 395979 NAN 26 12525 NAN foodSelf direct NAN NAN "I'm not the problem one. It doesn't make much sense for me to seek help for eating."
+52731 403518 406428 27 7539 2910 foodSelf reverse 1 5 "I wish I had more ideas on how to solve my eating problem."
+60287 411074 417420 28 7556 6346 foodSelf reverse 1 5 "Maybe a weight-control treatment program will be able to help me."
+67842 418629 NAN 29 7555 NAN foodSelf direct NAN NAN "Seeking help for eating is pretty much a waste of time for me because the problem doesn't have to do with me."
+80384 431171 435995 30 12542 4824 foodOther direct 1 1 "Beverly guesses she has faults related to eating, but there's nothing that she really needs to change."
+87940 438727 NAN 31 7556 NAN foodOther direct NAN NAN "Regarding Beverly's eating, she may be part of the problem, but she doesn't really think she is."
+95479 446266 NAN 32 7539 NAN foodOther direct NAN NAN "Beverly has worries about her eating but so does the next guy. Why should she spend time thinking about his/her eating?"
+103034 453821 459219 33 7555 5398 foodOther direct 1 1 "Beverly would rather cope with her faults related to eating than try to change them."
+115560 466347 NAN 34 12526 NAN drugSelf direct NAN NAN "Seeking help for drug use is pretty much a waste of time for me because the problem doesn't have to do with me."
+123115 473902 479442 35 7555 5540 drugSelf reverse 1 5 "I've been thinking that I might want to change my drug use."
+130671 481458 NAN 36 7556 NAN drugSelf direct NAN NAN "I guess I have faults related to drug use, but there's nothing that I really need to change."
+138210 488997 495833 37 7539 6836 drugSelf reverse 1 5 "I'm hoping that seeking help for my drug use will help me to better understand myself."
+# Waiting for MR sync... 
+10000 513781 518640 38 10000 4859 foodOther reverse 1 5 "Beverly wishes she had more ideas on how to solve her eating problem."
+17556 521337 524904 39 7556 3567 foodOther reverse 1 5 "Maybe a weight-control treatment program will be able to help Beverly."
+25111 528892 NAN 40 7555 NAN foodOther direct NAN NAN "All this talk about psychology is boring. Why can't people like Beverly just forget about their eating problems?"
+32667 536448 542168 41 7556 5720 foodOther reverse 1 5 "Beverly hopes that someone at a weight-control treatment program will have some good advice for her."
+45209 548990 551887 42 12542 2897 drugSelf reverse 1 5 "Maybe drug treatment program will be able to help me with my drug use."
+52764 556545 562743 43 7555 6198 drugSelf direct 1 1 "I have worries about my drug use but so does the next guy. Why spend time thinking about my drug use?"
+60303 564084 571039 44 7539 6955 drugSelf direct 4 4 "I would rather cope with my faults related to drug use than try to change them."
+67859 571640 576454 45 7556 4814 drugSelf reverse 1 5 "I hope that someone at a drug treatment program will have some good drug use advice for me."
+80384 584165 589710 46 12525 5545 drugOther reverse 1 5 "Beverly is hoping that seeking help for her drug use will help her to understand herself better."
+87940 591721 596870 47 7556 5149 drugOther reverse 2 4 "Beverly has a drug use problem, and she really thinks she should work at it."
+95495 599276 603533 48 7555 4257 drugOther reverse 2 4 "Beverly hopes that someone at a drug treatment program will have some good advice for her."
+103051 606832 NAN 49 7556 NAN drugOther direct NAN NAN "Beverly would rather cope with her faults related to drug use than try to change them."
+115577 619358 626037 50 12526 6679 foodSelf direct 1 1 "Regarding my eating, I may be part of the problem, but I don't really think I am."
+123115 626896 631716 51 7538 4820 foodSelf reverse 1 5 "I have an eating problem, and I really think I should work at it."
+130671 634452 639236 52 7556 4784 foodSelf reverse 1 5 "I hope that someone at a weight-control treatment program will have some good advice for me."
+138243 642024 648428 53 7572 6404 foodSelf direct 1 1 "I have worries about my eating but so does the next guy. Why spend time thinking about my eating?"
+# Waiting for MR sync... 
+10000 666775 NAN 54 10000 NAN drugSelf direct NAN NAN "As far as I'm concerned, I don't have any drug use problems that need changing."
+17539 674314 679643 55 7539 5329 drugSelf reverse 1 5 "I think I might be ready for some self-improvement related to my drug use."
+25078 681853 686523 56 7539 4670 drugSelf reverse 1 5 "It might be worthwhile to work on my drug use problem."
+32633 689408 694818 57 7555 5410 drugSelf direct 4 4 "I'm not the problem one. It doesn't make much sense for me to seek help for drug use."
+45176 701951 707850 58 12543 5899 drugOther direct 4 4 "Seeking help for drug use is pretty much a waste of time for Beverly because the problem doesn't have to do with her."
+52731 709506 712570 59 7555 3064 drugOther reverse 1 5 "It might be worthwhile for Beverly to work on her drug use problem."
+60287 717062 720913 60 7556 3851 drugOther direct 1 1 "Regarding Beverly's drug use, she may be part of the problem, but she doesn't really think she is."
+67842 724617 NAN 61 7555 NAN drugOther direct NAN NAN "All this talk about psychology is boring. Why can't people like Beverly just forget about their drug use problems?"
+80384 737159 NAN 62 12542 NAN foodSelf direct NAN NAN "I guess I have faults related to eating, but there's nothing that I really need to change."
+87923 744698 751568 63 7539 6870 foodSelf direct 4 4 "I would rather cope with my faults related to eating than try to change them."
+95462 752237 NAN 64 7539 NAN foodSelf reverse NAN NAN "I think I might be ready for some self-improvement related to my eating."
+103001 759776 765160 65 7539 5384 foodSelf direct 4 4 "As far as I'm concerned, I don't have any eating problems that need changing."
+115526 772301 776879 66 12525 4578 foodOther reverse 1 5 "Beverly thinks she might be ready for some self-improvement related to her eating."
+123065 779840 782023 67 7539 2183 foodOther reverse 1 5 "It might be worthwhile for Beverly to work on her eating problem."
+130621 787396 790911 68 7556 3515 foodOther reverse 1 5 "Beverly has been thinking that she might want to change her eating."
+138176 794951 NAN 69 7555 NAN foodOther direct NAN NAN "As far as I'm concerned, Beverly doesn't have any eating problems that need changing."
+# Waiting for MR sync... 
+## --------------------------------------------------------------------------------------------------- 
+## For trials that had responses ('resps'), r(esponses)Tot(al), r(esponses)Mean, rtTot(al), rtMean 
+## category NaNs resps rMean rtTot rtMean 
+## drugSelf 3 13 51 3.923 68093 5237.923 
+## drugOther 6 10 43 4.3 46439 4643.9 
+## foodSelf 6 10 38 3.8 54170 5417.0 
+## foodOther 5 11 43 3.909 49436 4494.182 
