@@ -1,0 +1,409 @@
+/mnt/jxvs02/conte_processed_data/connectivity_interleaved
+study3_SP01
+/mnt/hcp01/old_data/scrubbed_datasets/study3_SP01
+sending incremental file list
+
+sent 8104 bytes  received 13 bytes  5411.33 bytes/sec
+total size is 10398372964  speedup is 1281061.10
+study3_SP02
+/mnt/hcp01/old_data/scrubbed_datasets/study3_SP02
+sending incremental file list
+
+sent 43954 bytes  received 16 bytes  29313.33 bytes/sec
+total size is 18528746519  speedup is 421395.19
+study3_SP03
+/mnt/hcp01/old_data/scrubbed_datasets/study3_SP03
+sending incremental file list
+
+sent 6386 bytes  received 13 bytes  12798.00 bytes/sec
+total size is 8325333115  speedup is 1301036.59
+study3_SP04
+/mnt/hcp01/old_data/scrubbed_datasets/study3_SP04
+sending incremental file list
+
+sent 12041 bytes  received 15 bytes  24112.00 bytes/sec
+total size is 16112516891  speedup is 1336472.87
+study3_SP05
+/mnt/hcp01/old_data/scrubbed_datasets/study3_SP05
+sending incremental file list
+
+sent 38208 bytes  received 16 bytes  25482.67 bytes/sec
+total size is 18299131822  speedup is 478734.09
+study3_SP06
+/mnt/hcp01/old_data/scrubbed_datasets/study3_SP06
+sending incremental file list
+
+sent 32755 bytes  received 16 bytes  65542.00 bytes/sec
+total size is 17980924220  speedup is 548684.03
+study3_SP07
+/mnt/hcp01/old_data/scrubbed_datasets/study3_SP07
+sending incremental file list
+
+sent 36740 bytes  received 16 bytes  24504.00 bytes/sec
+total size is 16256149652  speedup is 442272.00
+study3_SP08
+/mnt/hcp01/old_data/scrubbed_datasets/study3_SP08
+sending incremental file list
+
+sent 7463 bytes  received 13 bytes  14952.00 bytes/sec
+total size is 8471242070  speedup is 1133124.94
+study3_SP09
+/mnt/hcp01/old_data/scrubbed_datasets/study3_SP09
+sending incremental file list
+
+sent 13886 bytes  received 15 bytes  27802.00 bytes/sec
+total size is 15548192084  speedup is 1118494.50
+study3_SP10
+/mnt/hcp01/old_data/scrubbed_datasets/study3_SP10
+sending incremental file list
+
+sent 9368 bytes  received 13 bytes  18762.00 bytes/sec
+total size is 8325327244  speedup is 887466.93
+study3_SP11
+/mnt/hcp01/old_data/scrubbed_datasets/study3_SP11
+sending incremental file list
+
+sent 13104 bytes  received 15 bytes  26238.00 bytes/sec
+total size is 15540997377  speedup is 1184617.53
+study3_SP12
+/mnt/hcp01/old_data/scrubbed_datasets/study3_SP12
+sending incremental file list
+
+sent 35260 bytes  received 16 bytes  23517.33 bytes/sec
+total size is 18109890380  speedup is 513377.09
+study3_SP13
+/mnt/hcp01/old_data/scrubbed_datasets/study3_SP13
+sending incremental file list
+
+sent 37881 bytes  received 16 bytes  75794.00 bytes/sec
+total size is 18804621667  speedup is 496203.44
+study3_SP14
+/mnt/hcp01/old_data/scrubbed_datasets/study3_SP14
+sending incremental file list
+
+sent 38195 bytes  received 16 bytes  8491.33 bytes/sec
+total size is 18289266475  speedup is 478638.78
+study3_SP15
+/mnt/hcp01/old_data/scrubbed_datasets/study3_SP15
+sending incremental file list
+
+sent 38858 bytes  received 16 bytes  25916.00 bytes/sec
+total size is 18277848520  speedup is 470181.83
+study3_SP16
+/mnt/hcp01/old_data/scrubbed_datasets/study3_SP16
+sending incremental file list
+
+sent 36111 bytes  received 16 bytes  24084.67 bytes/sec
+total size is 18614706523  speedup is 515257.47
+study3_SP17
+/mnt/hcp01/old_data/scrubbed_datasets/study3_SP17
+sending incremental file list
+
+sent 12640 bytes  received 15 bytes  25310.00 bytes/sec
+total size is 13476288481  speedup is 1064898.34
+study3_SP18
+/mnt/hcp01/old_data/scrubbed_datasets/study3_SP18
+sending incremental file list
+
+sent 7443 bytes  received 13 bytes  14912.00 bytes/sec
+total size is 8448937471  speedup is 1133172.94
+study3_SP19
+/mnt/hcp01/old_data/scrubbed_datasets/study3_SP19
+sending incremental file list
+
+sent 11475 bytes  received 15 bytes  22980.00 bytes/sec
+total size is 13603827182  speedup is 1183971.03
+study3_SP20
+/mnt/hcp01/old_data/scrubbed_datasets/study3_SP20
+sending incremental file list
+
+sent 40825 bytes  received 16 bytes  27227.33 bytes/sec
+total size is 18358541513  speedup is 449512.54
+study3_SP21
+/mnt/hcp01/old_data/scrubbed_datasets/study3_SP21
+sending incremental file list
+
+sent 13767 bytes  received 15 bytes  27564.00 bytes/sec
+total size is 15540998291  speedup is 1127630.12
+study3_SP22
+/mnt/hcp01/old_data/scrubbed_datasets/study3_SP22
+sending incremental file list
+
+sent 31571 bytes  received 16 bytes  63174.00 bytes/sec
+total size is 17956608116  speedup is 568480.96
+study3_SP23
+/mnt/hcp01/old_data/scrubbed_datasets/study3_SP23
+sending incremental file list
+
+sent 34233 bytes  received 16 bytes  22832.67 bytes/sec
+total size is 15008362831  speedup is 438213.17
+study3_SP24
+/mnt/hcp01/old_data/scrubbed_datasets/study3_SP24
+sending incremental file list
+
+sent 39191 bytes  received 16 bytes  78414.00 bytes/sec
+total size is 18284182835  speedup is 466349.96
+study3_SP25
+/mnt/hcp01/old_data/scrubbed_datasets/study3_SP25
+sending incremental file list
+
+sent 35641 bytes  received 16 bytes  23771.33 bytes/sec
+total size is 18126792837  speedup is 508365.62
+study3_SP26
+/mnt/hcp01/old_data/scrubbed_datasets/study3_SP26
+sending incremental file list
+
+sent 35068 bytes  received 16 bytes  70168.00 bytes/sec
+total size is 18662152393  speedup is 531927.73
+study3_SP27
+/mnt/hcp01/old_data/scrubbed_datasets/study3_SP27
+sending incremental file list
+
+sent 33321 bytes  received 16 bytes  6061.27 bytes/sec
+total size is 18023375200  speedup is 540641.79
+study3_SP28
+/mnt/hcp01/old_data/scrubbed_datasets/study3_SP28
+sending incremental file list
+
+sent 31971 bytes  received 14 bytes  63970.00 bytes/sec
+total size is 11137527667  speedup is 348210.96
+study3_SP29
+/mnt/hcp01/old_data/scrubbed_datasets/study3_SP29
+sending incremental file list
+
+sent 32631 bytes  received 16 bytes  21764.67 bytes/sec
+total size is 18002964206  speedup is 551443.14
+study3_SP30
+/mnt/hcp01/old_data/scrubbed_datasets/study3_SP30
+sending incremental file list
+
+sent 36956 bytes  received 14 bytes  24646.67 bytes/sec
+total size is 11197238336  speedup is 302873.64
+study3_SP31
+/mnt/hcp01/old_data/scrubbed_datasets/study3_SP31
+sending incremental file list
+
+sent 7421 bytes  received 13 bytes  14868.00 bytes/sec
+total size is 8325326306  speedup is 1119898.62
+study3_SP32
+/mnt/hcp01/old_data/scrubbed_datasets/study3_SP32
+sending incremental file list
+
+sent 34163 bytes  received 16 bytes  68358.00 bytes/sec
+total size is 18053779668  speedup is 528212.64
+study4_SC01
+/mnt/hcp01/old_data/scrubbed_datasets/study4_SC01
+sending incremental file list
+
+sent 31244 bytes  received 14 bytes  20838.67 bytes/sec
+total size is 12112558012  speedup is 387502.66
+study4_SC02
+/mnt/hcp01/old_data/scrubbed_datasets/study4_SC02
+sending incremental file list
+
+sent 29239 bytes  received 14 bytes  19502.00 bytes/sec
+total size is 12021562321  speedup is 410951.43
+study4_SC03
+/mnt/hcp01/old_data/scrubbed_datasets/study4_SC03
+sending incremental file list
+
+sent 33021 bytes  received 14 bytes  22023.33 bytes/sec
+total size is 15830298355  speedup is 479197.77
+study4_SC04
+/mnt/hcp01/old_data/scrubbed_datasets/study4_SC04
+sending incremental file list
+
+sent 31676 bytes  received 14 bytes  21126.67 bytes/sec
+total size is 14565146163  speedup is 459613.32
+study4_SC05
+/mnt/hcp01/old_data/scrubbed_datasets/study4_SC05
+sending incremental file list
+
+sent 33264 bytes  received 14 bytes  66556.00 bytes/sec
+total size is 15754601526  speedup is 473423.93
+study4_SC06
+/mnt/hcp01/old_data/scrubbed_datasets/study4_SC06
+sending incremental file list
+
+sent 32386 bytes  received 14 bytes  21600.00 bytes/sec
+total size is 15693924417  speedup is 484380.38
+study4_SC07
+/mnt/hcp01/old_data/scrubbed_datasets/study4_SC07
+sending incremental file list
+
+sent 38797 bytes  received 15 bytes  25874.67 bytes/sec
+total size is 43691430845  speedup is 1125719.64
+study4_SC08
+/mnt/hcp01/old_data/scrubbed_datasets/study4_SC08
+sending incremental file list
+
+sent 36885 bytes  received 14 bytes  73798.00 bytes/sec
+total size is 15901012233  speedup is 430933.42
+study4_SC09
+/mnt/hcp01/old_data/scrubbed_datasets/study4_SC09
+sending incremental file list
+
+sent 33577 bytes  received 14 bytes  22394.00 bytes/sec
+total size is 15792546544  speedup is 470142.20
+study4_SC10
+/mnt/hcp01/old_data/scrubbed_datasets/study4_SC10
+sending incremental file list
+
+sent 38674 bytes  received 14 bytes  77376.00 bytes/sec
+total size is 16650628895  speedup is 430382.26
+study4_SC12
+/mnt/hcp01/old_data/scrubbed_datasets/study4_SC12
+sending incremental file list
+
+sent 27101 bytes  received 14 bytes  54230.00 bytes/sec
+total size is 8781815141  speedup is 323872.95
+study4_SC13
+/mnt/hcp01/old_data/scrubbed_datasets/study4_SC13
+sending incremental file list
+
+sent 29862 bytes  received 14 bytes  59752.00 bytes/sec
+total size is 15634345864  speedup is 523307.87
+study4_SP01
+/mnt/hcp01/old_data/scrubbed_datasets/study4_SP01
+sending incremental file list
+
+sent 32936 bytes  received 14 bytes  65900.00 bytes/sec
+total size is 15883310895  speedup is 482042.82
+study4_SP02
+/mnt/hcp01/old_data/scrubbed_datasets/study4_SP02
+sending incremental file list
+
+sent 8987 bytes  received 13 bytes  18000.00 bytes/sec
+total size is 13749170736  speedup is 1527685.64
+study4_SP03
+/mnt/hcp01/old_data/scrubbed_datasets/study4_SP03
+sending incremental file list
+
+sent 31083 bytes  received 14 bytes  62194.00 bytes/sec
+total size is 15638094967  speedup is 502881.15
+study4_SP04
+/mnt/hcp01/old_data/scrubbed_datasets/study4_SP04
+sending incremental file list
+
+sent 12390 bytes  received 13 bytes  24806.00 bytes/sec
+total size is 13184869363  speedup is 1063038.73
+study4_SP05
+/mnt/hcp01/old_data/scrubbed_datasets/study4_SP05
+sending incremental file list
+
+sent 30406 bytes  received 14 bytes  60840.00 bytes/sec
+total size is 15657451656  speedup is 514709.13
+study4_SP06
+/mnt/hcp01/old_data/scrubbed_datasets/study4_SP06
+sending incremental file list
+
+sent 6620 bytes  received 13 bytes  13266.00 bytes/sec
+total size is 8325326160  speedup is 1255137.37
+study4_SP07
+/mnt/hcp01/old_data/scrubbed_datasets/study4_SP07
+sending incremental file list
+
+sent 28280 bytes  received 14 bytes  56588.00 bytes/sec
+total size is 11976700490  speedup is 423294.71
+study4_SP09
+/mnt/hcp01/old_data/scrubbed_datasets/study4_SP09
+sending incremental file list
+
+sent 30125 bytes  received 14 bytes  60278.00 bytes/sec
+total size is 14489700783  speedup is 480762.49
+study4_SP11
+/mnt/hcp01/old_data/scrubbed_datasets/study4_SP11
+sending incremental file list
+
+sent 29524 bytes  received 14 bytes  59076.00 bytes/sec
+total size is 15617429093  speedup is 528723.31
+study5_SC02
+/mnt/hcp01/old_data/scrubbed_datasets/study5_SC02
+sending incremental file list
+
+sent 6314 bytes  received 13 bytes  12654.00 bytes/sec
+total size is 8525216688  speedup is 1347434.28
+study5_SC03
+/mnt/hcp01/old_data/scrubbed_datasets/study5_SC03
+sending incremental file list
+
+sent 25199 bytes  received 14 bytes  50426.00 bytes/sec
+total size is 10760171166  speedup is 426770.76
+study5_SC04
+/mnt/hcp01/old_data/scrubbed_datasets/study5_SC04
+sending incremental file list
+
+sent 35931 bytes  received 14 bytes  71890.00 bytes/sec
+total size is 11708403291  speedup is 325731.07
+study5_SC05
+/mnt/hcp01/old_data/scrubbed_datasets/study5_SC05
+sending incremental file list
+
+sent 6694 bytes  received 13 bytes  13414.00 bytes/sec
+total size is 8325328275  speedup is 1241289.44
+study5_SC06
+/mnt/hcp01/old_data/scrubbed_datasets/study5_SC06
+sending incremental file list
+
+sent 34830 bytes  received 14 bytes  69688.00 bytes/sec
+total size is 11084252243  speedup is 318110.79
+study5_SC07
+/mnt/hcp01/old_data/scrubbed_datasets/study5_SC07
+sending incremental file list
+
+sent 26577 bytes  received 14 bytes  53182.00 bytes/sec
+total size is 10785624380  speedup is 405611.84
+study5_SC08
+/mnt/hcp01/old_data/scrubbed_datasets/study5_SC08
+sending incremental file list
+
+sent 28354 bytes  received 14 bytes  56736.00 bytes/sec
+total size is 10800285649  speedup is 380720.73
+study5_SC09
+/mnt/hcp01/old_data/scrubbed_datasets/study5_SC09
+sending incremental file list
+
+sent 25433 bytes  received 14 bytes  50894.00 bytes/sec
+total size is 10737114440  speedup is 421940.29
+study5_SC10
+/mnt/hcp01/old_data/scrubbed_datasets/study5_SC10
+sending incremental file list
+
+sent 28105 bytes  received 14 bytes  56238.00 bytes/sec
+total size is 10823084837  speedup is 384902.91
+study5_SC11
+/mnt/hcp01/old_data/scrubbed_datasets/study5_SC11
+sending incremental file list
+
+sent 25696 bytes  received 14 bytes  51420.00 bytes/sec
+total size is 10740790463  speedup is 417767.03
+study5_SC12
+/mnt/hcp01/old_data/scrubbed_datasets/study5_SC12
+sending incremental file list
+
+sent 26862 bytes  received 14 bytes  53752.00 bytes/sec
+total size is 10786923630  speedup is 401358.97
+study5_SC13
+/mnt/hcp01/old_data/scrubbed_datasets/study5_SC13
+sending incremental file list
+
+sent 26729 bytes  received 14 bytes  53486.00 bytes/sec
+total size is 10780866909  speedup is 403128.55
+study5_SC14
+/mnt/hcp01/old_data/scrubbed_datasets/study5_SC14
+sending incremental file list
+
+sent 26091 bytes  received 14 bytes  17403.33 bytes/sec
+total size is 10757780658  speedup is 412096.56
+study5_SC15
+/mnt/hcp01/old_data/scrubbed_datasets/study5_SC15
+sending incremental file list
+
+sent 26197 bytes  received 14 bytes  52422.00 bytes/sec
+total size is 10761436939  speedup is 410569.49
+study5_SC16
+/mnt/hcp01/old_data/scrubbed_datasets/study5_SC16
+sending incremental file list
+
+sent 26456 bytes  received 14 bytes  52940.00 bytes/sec
+total size is 10769923976  speedup is 406872.84

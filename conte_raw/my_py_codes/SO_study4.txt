@@ -1,0 +1,1578 @@
+CONTE_SCO1_SPGR_SENSE_8_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CONTE_SCO1_SPGR_SENSE_8_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CONTE_SCO1_WIP_NBACK_1_SENSE_22_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_NBACK_1_SENSE_22_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_NBACK_2_SENSE_23_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_NBACK_2_SENSE_23_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_NBACK_3_SENSE_24_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_NBACK_3_SENSE_24_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_NBACK_4_SENSE_25_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_NBACK_4_SENSE_25_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_RESTING_STATE_2_SENSE_37_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CONTE_SCO1_WIP_RESTING_STATE_2_SENSE_37_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CONTE_SCO1_WIP_RESTING_STATE_SENSE_36_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_RESTING_STATE_SENSE_36_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_REWARD_1_SENSE_27_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_REWARD_1_SENSE_27_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_REWARD_2_SENSE_29_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_REWARD_2_SENSE_29_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_REWARD_3_SENSE_30_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_REWARD_3_SENSE_30_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_REWARD_4_SENSE_33_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_REWARD_4_SENSE_33_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_REWARD_5_SENSE_34_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_REWARD_5_SENSE_34_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_REWARD_6_SENSE_35_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_REWARD_6_SENSE_35_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_SELFORDER_1_SENSE_5_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_SELFORDER_1_SENSE_5_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_SELFORDER_1_SENSE_9_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_SELFORDER_1_SENSE_9_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_SELFORDER_2_SENSE_10_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_SELFORDER_2_SENSE_10_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_SELFORDER_3_SENSE_11_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_SELFORDER_3_SENSE_11_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_SELFORDER_4_SENSE_12_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_SELFORDER_4_SENSE_12_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_SELFORDER_5_SENSE_13_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_SELFORDER_5_SENSE_13_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_SELFORDER_6_SENSE_14_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_SELFORDER_6_SENSE_14_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_SELFORDER_7_SENSE_15_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_SELFORDER_7_SENSE_15_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_SELFORDER_8_SENSE_16_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_SELFORDER_8_SENSE_16_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_SELFORDER_9_SENSE_17_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTE_SCO1_WIP_SELFORDER_9_SENSE_17_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_RESTING_STATE_2_SENSE_30_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_RESTING_STATE_2_SENSE_30_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_RESTING_STATE_SENSE_29_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_RESTING_STATE_SENSE_29_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_REWARD_1_SENSE_23_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_REWARD_1_SENSE_23_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_REWARD_2_SENSE_24_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_REWARD_2_SENSE_24_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_REWARD_3_SENSE_25_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_REWARD_3_SENSE_25_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_REWARD_4_SENSE_26_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_REWARD_4_SENSE_26_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_REWARD_5_SENSE_27_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_REWARD_5_SENSE_27_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_REWARD_6_SENSE_28_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_REWARD_6_SENSE_28_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_WIP_NBACK_1_SENSE_16_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_WIP_NBACK_1_SENSE_16_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_WIP_NBACK_2_SENSE_17_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_WIP_NBACK_2_SENSE_17_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_WIP_NBACK_3_SENSE_18_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_WIP_NBACK_3_SENSE_18_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_WIP_NBACK_4_SENSE_19_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_WIP_NBACK_4_SENSE_19_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_WIP_SELFORDER_1_SENSE_4_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_WIP_SELFORDER_1_SENSE_4_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_WIP_SELFORDER_2_SENSE_5_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_WIP_SELFORDER_2_SENSE_5_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_WIP_SELFORDER_3_SENSE_6_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_WIP_SELFORDER_3_SENSE_6_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_WIP_SELFORDER_4_SENSE_7_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_WIP_SELFORDER_4_SENSE_7_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_WIP_SELFORDER_5_SENSE_8_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_WIP_SELFORDER_5_SENSE_8_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_WIP_SELFORDER_6SENSE_SENSE_9_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_WIP_SELFORDER_6SENSE_SENSE_9_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_WIP_SELFORDER_7_SENSE_10_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_WIP_SELFORDER_7_SENSE_10_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_WIP_SELFORDER_8_SENSE_11_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_WIP_SELFORDER_8_SENSE_11_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_WIP_SELFORDER_9_SENSE_12_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SCO2_WIP_WIP_SELFORDER_9_SENSE_12_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_RESTING_STATE_2_SENSE_28_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_RESTING_STATE_2_SENSE_28_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_RESTING_STATE_SENSE_27_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_RESTING_STATE_SENSE_27_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_REWARD_1_SENSE_20_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_REWARD_1_SENSE_20_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_REWARD_2_SENSE_21_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_REWARD_2_SENSE_21_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_REWARD_3_SENSE_22_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_REWARD_3_SENSE_22_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_REWARD_4_SENSE_24_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_REWARD_4_SENSE_24_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_REWARD_5_SENSE_25_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_REWARD_5_SENSE_25_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_REWARD_6_SENSE_26_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_REWARD_6_SENSE_26_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_WIP_NBACK_1_SENSE_16_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_WIP_NBACK_1_SENSE_16_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_WIP_NBACK_2_SENSE_17_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_WIP_NBACK_2_SENSE_17_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_WIP_NBACK_3_SENSE_18_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_WIP_NBACK_3_SENSE_18_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_WIP_NBACK_4_SENSE_19_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_WIP_NBACK_4_SENSE_19_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_WIP_SELFORDER_1_SENSE_4_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_WIP_SELFORDER_1_SENSE_4_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_WIP_SELFORDER_2_SENSE_5_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_WIP_SELFORDER_2_SENSE_5_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_WIP_SELFORDER_3_SENSE_6_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_WIP_SELFORDER_3_SENSE_6_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_WIP_SELFORDER_4_SENSE_7_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_WIP_SELFORDER_4_SENSE_7_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_WIP_SELFORDER_5_SENSE_8_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_WIP_SELFORDER_5_SENSE_8_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_WIP_SELFORDER_6SENSE_SENSE_9_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_WIP_SELFORDER_6SENSE_SENSE_9_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_WIP_SELFORDER_7_SENSE_10_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_WIP_SELFORDER_7_SENSE_10_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_WIP_SELFORDER_8_SENSE_11_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_WIP_SELFORDER_8_SENSE_11_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_WIP_SELFORDER_9_SENSE_12_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC03_WIP_WIP_SELFORDER_9_SENSE_12_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_WIP_WIP_SELFORDER_1_SENSE_5_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_WIP_WIP_SELFORDER_1_SENSE_5_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_WIP_WIP_SELFORDER_2_SENSE_7_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_WIP_WIP_SELFORDER_2_SENSE_7_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_WIP_WIP_SELFORDER_3_SENSE_8_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_WIP_WIP_SELFORDER_3_SENSE_8_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_WIP_WIP_SELFORDER_4_SENSE_9_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_WIP_WIP_SELFORDER_4_SENSE_9_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_WIP_WIP_SELFORDER_5_SENSE_10_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_WIP_WIP_SELFORDER_5_SENSE_10_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_WIP_WIP_SELFORDER_6SENSE_SENSE_11_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_WIP_WIP_SELFORDER_6SENSE_SENSE_11_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_WIP_WIP_SELFORDER_7_SENSE_12_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_WIP_WIP_SELFORDER_7_SENSE_12_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_WIP_WIP_SELFORDER_8_SENSE_13_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_WIP_WIP_SELFORDER_8_SENSE_13_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_WIP_WIP_SELFORDER_9_SENSE_14_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_WIP_WIP_SELFORDER_9_SENSE_14_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_v2_WIP_REWARD_1_SENSE_9_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_v2_WIP_REWARD_1_SENSE_9_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_v2_WIP_REWARD_2_SENSE_10_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_v2_WIP_REWARD_2_SENSE_10_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_v2_WIP_REWARD_3_SENSE_11_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_v2_WIP_REWARD_3_SENSE_11_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_v2_WIP_REWARD_4_SENSE_12_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_v2_WIP_REWARD_4_SENSE_12_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_v2_WIP_REWARD_5_SENSE_13_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_v2_WIP_REWARD_5_SENSE_13_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_v2_WIP_REWARD_6_SENSE_14_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_v2_WIP_REWARD_6_SENSE_14_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_v2_WIP_WIP_NBACK_1_SENSE_5_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_v2_WIP_WIP_NBACK_1_SENSE_5_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_v2_WIP_WIP_NBACK_2_SENSE_6_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_v2_WIP_WIP_NBACK_2_SENSE_6_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_v2_WIP_WIP_NBACK_3_SENSE_7_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_v2_WIP_WIP_NBACK_3_SENSE_7_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_v2_WIP_WIP_NBACK_4_SENSE_8_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SC04_v2_WIP_WIP_NBACK_4_SENSE_8_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_V2_WIP_WIP_NBACK_1_SENSE_4_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_V2_WIP_WIP_NBACK_1_SENSE_4_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_V2_WIP_WIP_NBACK_2_SENSE_5_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_V2_WIP_WIP_NBACK_2_SENSE_5_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_V2_WIP_WIP_NBACK_3_SENSE_6_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_V2_WIP_WIP_NBACK_3_SENSE_6_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_V2_WIP_WIP_NBACK_4_SENSE_7_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_V2_WIP_WIP_NBACK_4_SENSE_7_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_V2_WIP_WIP_RESTING_STATE_1_SENSE_14_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_V2_WIP_WIP_RESTING_STATE_1_SENSE_14_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_V2_WIP_WIP_RESTING_STATE_2_SENSE_15_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_V2_WIP_WIP_RESTING_STATE_2_SENSE_15_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_V2_WIP_WIP_REWARD_1_SENSE_8_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_V2_WIP_WIP_REWARD_1_SENSE_8_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_V2_WIP_WIP_REWARD_2_SENSE_9_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_V2_WIP_WIP_REWARD_2_SENSE_9_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_V2_WIP_WIP_REWARD_3_SENSE_10_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_V2_WIP_WIP_REWARD_3_SENSE_10_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_V2_WIP_WIP_REWARD_4_SENSE_11_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_V2_WIP_WIP_REWARD_4_SENSE_11_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_V2_WIP_WIP_REWARD_5_SENSE_12_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_V2_WIP_WIP_REWARD_5_SENSE_12_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_V2_WIP_WIP_REWARD_6_SENSE_13_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_V2_WIP_WIP_REWARD_6_SENSE_13_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_WIP_WIP_SELFORDER_1_SENSE_5_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_WIP_WIP_SELFORDER_1_SENSE_5_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_WIP_WIP_SELFORDER_2_SENSE_6_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_WIP_WIP_SELFORDER_2_SENSE_6_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_WIP_WIP_SELFORDER_3_SENSE_7_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_WIP_WIP_SELFORDER_3_SENSE_7_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_WIP_WIP_SELFORDER_4_SENSE_8_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_WIP_WIP_SELFORDER_4_SENSE_8_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_WIP_WIP_SELFORDER_5_SENSE_9_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_WIP_WIP_SELFORDER_5_SENSE_9_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_WIP_WIP_SELFORDER_6_SENSE_10_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_WIP_WIP_SELFORDER_6_SENSE_10_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_WIP_WIP_SELFORDER_7_SENSE_11_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_WIP_WIP_SELFORDER_7_SENSE_11_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_WIP_WIP_SELFORDER_8_SENSE_12_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_WIP_WIP_SELFORDER_8_SENSE_12_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_WIP_WIP_SELFORDER_9_SENSE_13_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC05_WIP_WIP_SELFORDER_9_SENSE_13_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC06_WIP_WIP_RESTING_STATE_1_SENSE_15_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC06_WIP_WIP_RESTING_STATE_1_SENSE_15_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC06_WIP_WIP_RESTING_STATE_2_SENSE_16_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC06_WIP_WIP_RESTING_STATE_2_SENSE_16_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC06_WIP_WIP_SELFORDER_1_SENSE_3_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC06_WIP_WIP_SELFORDER_1_SENSE_3_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC06_WIP_WIP_SELFORDER_2_SENSE_4_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC06_WIP_WIP_SELFORDER_2_SENSE_4_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC06_WIP_WIP_SELFORDER_3_SENSE_5_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC06_WIP_WIP_SELFORDER_3_SENSE_5_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC06_WIP_WIP_SELFORDER_4_SENSE_6_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC06_WIP_WIP_SELFORDER_4_SENSE_6_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC06_WIP_WIP_SELFORDER_5_SENSE_7_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC06_WIP_WIP_SELFORDER_5_SENSE_7_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC06_WIP_WIP_SELFORDER_6_SENSE_8_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC06_WIP_WIP_SELFORDER_6_SENSE_8_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC06_WIP_WIP_SELFORDER_7_SENSE_9_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC06_WIP_WIP_SELFORDER_7_SENSE_9_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC06_WIP_WIP_SELFORDER_8_SENSE_10_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC06_WIP_WIP_SELFORDER_8_SENSE_10_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC06_WIP_WIP_SELFORDER_9_SENSE_11_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC06_WIP_WIP_SELFORDER_9_SENSE_11_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_SPGR_SENSE_18_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC07_SPGR_SENSE_18_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC07_WIP_WIP_NBACK_1_SENSE_21_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_NBACK_1_SENSE_21_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_NBACK_2_SENSE_22_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_NBACK_2_SENSE_22_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_NBACK_3_SENSE_23_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_NBACK_3_SENSE_23_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_NBACK_4_SENSE_24_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_NBACK_4_SENSE_24_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_RESTING_STATE_1_SENSE_31_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_RESTING_STATE_1_SENSE_31_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_RESTING_STATE_2_SENSE_32_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_RESTING_STATE_2_SENSE_32_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_REWARD_1_SENSE_25_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_REWARD_1_SENSE_25_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_REWARD_2_SENSE_26_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_REWARD_2_SENSE_26_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_REWARD_3_SENSE_27_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_REWARD_3_SENSE_27_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_REWARD_4_SENSE_28_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_REWARD_4_SENSE_28_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_REWARD_5_SENSE_29_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_REWARD_5_SENSE_29_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_REWARD_6_SENSE_30_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_REWARD_6_SENSE_30_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_SELFORDER_1_SENSE_9_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_SELFORDER_1_SENSE_9_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_SELFORDER_2_SENSE_10_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_SELFORDER_2_SENSE_10_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_SELFORDER_3_SENSE_11_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_SELFORDER_3_SENSE_11_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_SELFORDER_4_SENSE_12_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_SELFORDER_4_SENSE_12_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_SELFORDER_5_SENSE_13_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_SELFORDER_5_SENSE_13_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_SELFORDER_6_SENSE_14_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_SELFORDER_6_SENSE_14_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_SELFORDER_7_SENSE_15_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_SELFORDER_7_SENSE_15_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_SELFORDER_8_SENSE_16_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_SELFORDER_8_SENSE_16_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_SELFORDER_9_SENSE_17_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC07_WIP_WIP_SELFORDER_9_SENSE_17_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_NBACK_1_SENSE_18_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_NBACK_1_SENSE_18_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_NBACK_2_SENSE_19_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_NBACK_2_SENSE_19_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_NBACK_3_SENSE_20_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_NBACK_3_SENSE_20_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_NBACK_4_SENSE_21_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_NBACK_4_SENSE_21_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_RESTING_STATE_1_SENSE_29_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_RESTING_STATE_1_SENSE_29_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_RESTING_STATE_2_SENSE_30_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_RESTING_STATE_2_SENSE_30_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_REWARD_1_SENSE_23_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_REWARD_1_SENSE_23_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_REWARD_2_SENSE_24_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_REWARD_2_SENSE_24_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_REWARD_3_SENSE_25_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_REWARD_3_SENSE_25_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_REWARD_4_SENSE_26_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_REWARD_4_SENSE_26_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_REWARD_5_SENSE_27_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_REWARD_5_SENSE_27_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_REWARD_6_SENSE_28_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_REWARD_6_SENSE_28_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_SELFORDER_1_SENSE_3_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_SELFORDER_1_SENSE_3_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_SELFORDER_2_SENSE_4_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_SELFORDER_2_SENSE_4_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_SELFORDER_3_SENSE_5_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_SELFORDER_3_SENSE_5_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_SELFORDER_4_SENSE_6_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_SELFORDER_4_SENSE_6_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_SELFORDER_5_SENSE_7_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_SELFORDER_5_SENSE_7_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_SELFORDER_6_SENSE_8_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_SELFORDER_6_SENSE_8_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_SELFORDER_7_SENSE_9_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_SELFORDER_7_SENSE_9_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_SELFORDER_8_SENSE_10_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_SELFORDER_8_SENSE_10_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_SELFORDER_9_SENSE_11_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC08_WIP_WIP_SELFORDER_9_SENSE_11_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC09_WIP_WIP_NBACK_1_SENSE_22_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_NBACK_1_SENSE_22_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_NBACK_1_SENSE_22_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC09_WIP_WIP_NBACK_1_SENSE_22_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC09_WIP_WIP_NBACK_2_SENSE_23_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_NBACK_2_SENSE_23_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_NBACK_2_SENSE_23_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC09_WIP_WIP_NBACK_2_SENSE_23_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC09_WIP_WIP_NBACK_3_SENSE_24_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_NBACK_3_SENSE_24_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_NBACK_3_SENSE_24_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC09_WIP_WIP_NBACK_3_SENSE_24_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC09_WIP_WIP_NBACK_4_SENSE_25_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_NBACK_4_SENSE_25_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_NBACK_4_SENSE_25_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC09_WIP_WIP_NBACK_4_SENSE_25_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC09_WIP_WIP_RESTING_STATE_1_SENSE_3_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_RESTING_STATE_1_SENSE_3_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_RESTING_STATE_1_SENSE_3_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC09_WIP_WIP_RESTING_STATE_1_SENSE_3_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC09_WIP_WIP_RESTING_STATE_2_SENSE_4_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_RESTING_STATE_2_SENSE_4_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_RESTING_STATE_2_SENSE_4_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC09_WIP_WIP_RESTING_STATE_2_SENSE_4_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC09_WIP_WIP_REWARD_1_SENSE_26_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_REWARD_1_SENSE_26_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_REWARD_1_SENSE_26_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC09_WIP_WIP_REWARD_1_SENSE_26_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC09_WIP_WIP_REWARD_2_SENSE_27_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_REWARD_2_SENSE_27_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_REWARD_2_SENSE_27_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC09_WIP_WIP_REWARD_2_SENSE_27_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC09_WIP_WIP_REWARD_3_SENSE_28_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_REWARD_3_SENSE_28_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_REWARD_3_SENSE_28_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC09_WIP_WIP_REWARD_3_SENSE_28_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC09_WIP_WIP_REWARD_4_SENSE_29_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_REWARD_4_SENSE_29_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_REWARD_4_SENSE_29_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC09_WIP_WIP_REWARD_4_SENSE_29_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC09_WIP_WIP_REWARD_5_SENSE_30_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_REWARD_5_SENSE_30_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_REWARD_5_SENSE_30_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC09_WIP_WIP_REWARD_5_SENSE_30_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CS4_SC09_WIP_WIP_REWARD_6_SENSE_31_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_REWARD_6_SENSE_31_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_SELFORDER_1_SENSE_11_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_SELFORDER_1_SENSE_11_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_SELFORDER_2_SENSE_12_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_SELFORDER_2_SENSE_12_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_SELFORDER_3_SENSE_13_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_SELFORDER_3_SENSE_13_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_SELFORDER_4_SENSE_14_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_SELFORDER_4_SENSE_14_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_SELFORDER_5_SENSE_15_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_SELFORDER_5_SENSE_15_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_SELFORDER_6_SENSE_16_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_SELFORDER_6_SENSE_16_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_SELFORDER_7_SENSE_17_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_SELFORDER_7_SENSE_17_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_SELFORDER_8_SENSE_18_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_SELFORDER_8_SENSE_18_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_SELFORDER_9_SENSE_19_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ CS4_SC09_WIP_WIP_SELFORDER_9_SENSE_19_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_SPGR_SENSE_18_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_SPGR_SENSE_18_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_SPGR_SENSE_18_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_SPGR_SENSE_18_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_SURVEY_14_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_SURVEY_19_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_SURVEY_1_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_SURVEY_5_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_RESTING_STATE_2_SENSE_32_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_RESTING_STATE_2_SENSE_32_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_RESTING_STATE_2_SENSE_32_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_RESTING_STATE_2_SENSE_32_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_RESTING_STATE_SENSE_31_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_RESTING_STATE_SENSE_31_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_RESTING_STATE_SENSE_31_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_RESTING_STATE_SENSE_31_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_REWARD_1_SENSE_25_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_REWARD_1_SENSE_25_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_REWARD_1_SENSE_25_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_REWARD_1_SENSE_25_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_REWARD_2_SENSE_26_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_REWARD_2_SENSE_26_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_REWARD_2_SENSE_26_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_REWARD_2_SENSE_26_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_REWARD_3_SENSE_27_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_REWARD_3_SENSE_27_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_REWARD_3_SENSE_27_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_REWARD_3_SENSE_27_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_REWARD_4_SENSE_28_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_REWARD_4_SENSE_28_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_REWARD_4_SENSE_28_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_REWARD_4_SENSE_28_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_REWARD_5_SENSE_29_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_REWARD_5_SENSE_29_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_REWARD_5_SENSE_29_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_REWARD_5_SENSE_29_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_REWARD_6_SENSE_30_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_REWARD_6_SENSE_30_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_REWARD_6_SENSE_30_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_REWARD_6_SENSE_30_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_TEST_SENSE_3_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_TEST_SENSE_3_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_TEST_SENSE_3_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_TEST_SENSE_4_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_TEST_SENSE_4_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_TEST_SENSE_4_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_WIP_NBACK_1_SENSE_21_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_WIP_NBACK_1_SENSE_21_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_WIP_NBACK_1_SENSE_21_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_WIP_NBACK_1_SENSE_21_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_WIP_NBACK_2_SENSE_22_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_WIP_NBACK_2_SENSE_22_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_WIP_NBACK_2_SENSE_22_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_WIP_NBACK_2_SENSE_22_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_WIP_NBACK_3_SENSE_23_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_WIP_NBACK_3_SENSE_23_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_WIP_NBACK_3_SENSE_23_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_WIP_NBACK_3_SENSE_23_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_WIP_NBACK_4_SENSE_24_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_WIP_NBACK_4_SENSE_24_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_WIP_NBACK_4_SENSE_24_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_WIP_NBACK_4_SENSE_24_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_WIP_SELFORDER_1_SENSE_7_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_WIP_SELFORDER_1_SENSE_7_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_WIP_SELFORDER_1_SENSE_7_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_WIP_SELFORDER_1_SENSE_7_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_WIP_SELFORDER_2_SENSE_8_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_WIP_SELFORDER_2_SENSE_8_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_WIP_SELFORDER_2_SENSE_8_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_WIP_SELFORDER_2_SENSE_8_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_WIP_SELFORDER_3_SENSE_9_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_WIP_SELFORDER_3_SENSE_9_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_WIP_SELFORDER_3_SENSE_9_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_WIP_SELFORDER_3_SENSE_9_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_WIP_SELFORDER_4_SENSE_10_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_WIP_SELFORDER_4_SENSE_10_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_WIP_SELFORDER_4_SENSE_10_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_WIP_SELFORDER_4_SENSE_10_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_WIP_SELFORDER_5_SENSE_11_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_WIP_SELFORDER_5_SENSE_11_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_WIP_SELFORDER_5_SENSE_11_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_WIP_SELFORDER_5_SENSE_11_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_WIP_SELFORDER_6SENSE_SENSE_12_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_WIP_SELFORDER_6SENSE_SENSE_12_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_WIP_SELFORDER_6SENSE_SENSE_12_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_WIP_SELFORDER_6SENSE_SENSE_12_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_WIP_SELFORDER_7_SENSE_13_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_WIP_SELFORDER_7_SENSE_13_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_WIP_SELFORDER_7_SENSE_13_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_WIP_SELFORDER_7_SENSE_13_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_WIP_SELFORDER_8_SENSE_16_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_WIP_SELFORDER_8_SENSE_16_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_WIP_SELFORDER_8_SENSE_16_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_WIP_SELFORDER_8_SENSE_16_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_WIP_SELFORDER_9_SENSE_17_1.PAR
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_WIP_SELFORDER_9_SENSE_17_1.REC
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file exits 
+ SP01_WIP_WIP_SELFORDER_9_SENSE_17_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+SP01_WIP_WIP_SELFORDER_9_SENSE_17_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_SPGR_SENSE_32_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_SPGR_SENSE_32_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_NBACK_1_SENSE_19_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_NBACK_1_SENSE_19_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_NBACK_2_SENSE_20_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_NBACK_2_SENSE_20_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_NBACK_3_SENSE_21_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_NBACK_3_SENSE_21_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_NBACK_4_SENSE_22_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_NBACK_4_SENSE_22_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_RESTING_STATE_1_SENSE_33_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_RESTING_STATE_1_SENSE_33_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_RESTING_STATE_2_SENSE_34_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_RESTING_STATE_2_SENSE_34_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_REWARD_1_SENSE_23_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_REWARD_1_SENSE_23_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_REWARD_2_SENSE_24_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_REWARD_2_SENSE_24_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_REWARD_3_SENSE_25_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_REWARD_3_SENSE_25_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_REWARD_4_SENSE_28_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_REWARD_4_SENSE_28_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_REWARD_5_SENSE_29_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_REWARD_5_SENSE_29_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_REWARD_5_SENSE_30_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_REWARD_5_SENSE_30_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_REWARD_6_SENSE_31_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_REWARD_6_SENSE_31_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_SELFORDER_1_SENSE_7_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_SELFORDER_1_SENSE_7_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_SELFORDER_2_SENSE_8_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_SELFORDER_2_SENSE_8_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_SELFORDER_3_SENSE_9_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_SELFORDER_3_SENSE_9_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_SELFORDER_4_SENSE_10_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_SELFORDER_4_SENSE_10_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_SELFORDER_5_SENSE_11_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_SELFORDER_5_SENSE_11_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_SELFORDER_6_SENSE_12_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_SELFORDER_6_SENSE_12_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_SELFORDER_7_SENSE_13_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_SELFORDER_7_SENSE_13_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_SELFORDER_8_SENSE_14_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_SELFORDER_8_SENSE_14_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_SELFORDER_9_SENSE_15_1.hdr
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 
+CONTESMITH_SP02_WIP_WIP_SELFORDER_9_SENSE_15_1.img
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+file missing 

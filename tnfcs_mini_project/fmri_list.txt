@@ -1,0 +1,8 @@
+_3T_RS_fMRI_1.nii
+_3T_RS_fMRI_2.nii
+_3T_RS_fMRI_3.nii
+_3T_RS_fMRI_4.nii
+_3T_SOT_fMRI_2.nii
+_3T_SOT_fMRI_2.nii
+_3T_SOT_fMRI_2.nii
+_3T_SOT_fMRI_2.nii
